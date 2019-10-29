@@ -1,2 +1,2 @@
 # 7 segment & keypad interfacing
-button pressed on keypad is displayed on sevensegment
+button pressed on keypad is displayed on seven segment
