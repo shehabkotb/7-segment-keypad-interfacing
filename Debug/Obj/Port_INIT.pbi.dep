@@ -1,0 +1,4 @@
+Port_INIT.pbi: \
+  C:\Users\lilwiz\Documents\embedded\ projects\assignment\ 1\ seven\ segments\Port_INIT.c \
+  C:\Users\lilwiz\Documents\embedded\ projects\assignment\ 1\ seven\ segments/tm4c123gh6pm.h \
+  C:\Users\lilwiz\Documents\embedded\ projects\assignment\ 1\ seven\ segments/Port_INIT.h
