@@ -1,6 +1,7 @@
 main.pbi: \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdbool.h \
+  C:\Users\lilwiz\Documents\embedded\ projects\assignment\ 1\ seven\ segments\KeyPad.h \
   C:\Users\lilwiz\Documents\embedded\ projects\assignment\ 1\ seven\ segments\Systick_Timer.h \
-  C:\Users\lilwiz\Documents\embedded\ projects\assignment\ 1\ seven\ segments\Fsm.h \
   C:\Users\lilwiz\Documents\embedded\ projects\assignment\ 1\ seven\ segments\Port_INIT.h \
   C:\Users\lilwiz\Documents\embedded\ projects\assignment\ 1\ seven\ segments\tm4c123gh6pm.h \
   C:\Users\lilwiz\Documents\embedded\ projects\assignment\ 1\ seven\ segments\main.c

@@ -3,6 +3,7 @@
 
 void PORTB_init (){
 	
+	// 7seg PB0-7
 	unsigned int delay;
 	SYSCTL_RCGC2_R |= (1U << 1);
 	delay = SYSCTL_RCGCGPIO_R;
@@ -13,26 +14,9 @@ void PORTB_init (){
 	
 }
 
-void PORTF_init (){
-	
-	unsigned int delay;
-	SYSCTL_RCGC2_R |= (1U << 5);
-	delay = SYSCTL_RCGCGPIO_R;
-	GPIO_PORTF_LOCK_R = 0x4c4f434b;
-	GPIO_PORTF_CR_R = 0x1f;
-	GPIO_PORTF_PUR_R |= (sw1 | sw2);
-	GPIO_PORTF_DIR_R |= 0x0e;
-	GPIO_PORTF_DIR_R &= ~0x11;
-	GPIO_PORTF_DEN_R |= 0x1f;
-	
-}
 void PORTA_init (){
-	
-	//2-5 rows
-	//rows output coloums inputs
-	// odr fe el outputs 
-	// pull up inputs
 
+	// rows inputs PUR
 	// 0-4 colums pa2-pa5
 	unsigned int delay;
 	SYSCTL_RCGC2_R |= (1U << 0);
@@ -45,33 +29,11 @@ void PORTA_init (){
 	
 }
 
-void PORTD_init (){
-	
-		//2-5 rows
-	//rows output coloums inputs
-	// odr fe el outputs
-	// pull up inputs
-
-	//5-8 rows pd0-pd3
-	unsigned int delay;
-	SYSCTL_RCGC2_R |= (1U << 3);
-	delay = SYSCTL_RCGCGPIO_R;
-	GPIO_PORTD_LOCK_R = 0x4c4f434b;
-	GPIO_PORTD_CR_R = 0x1f;
-	GPIO_PORTD_DIR_R |= 0x0f;
-	GPIO_PORTD_ODR_R |= 0x0f;//Open drain pins 0 to 3
-	GPIO_PORTD_DEN_R |= 0x0f;
-	
-}
 
 void PORTE_init (){
 	
-		//2-5 rows
-	//rows output coloums inputs
-	// odr fe el outputs
-	// pull up inputs
-
-	//5-8 rows pd0-pd3
+	//rows output ODR
+	//rows pd0-pd3	
 	unsigned int delay;
 	SYSCTL_RCGC2_R |= (1U << 4);
 	delay = SYSCTL_RCGCGPIO_R;
@@ -79,7 +41,7 @@ void PORTE_init (){
 	GPIO_PORTE_CR_R = 0x1f;
 	GPIO_PORTE_PCTL_R &= ~0x000000FF;
 	GPIO_PORTE_DIR_R |= 0x0f;
-	GPIO_PORTE_ODR_R |= 0x0f;//Open drain pins 0 to 3
+	GPIO_PORTE_ODR_R |= 0x0f;  //Open drain pins 0 to 3
 	GPIO_PORTE_DEN_R |= 0x0f;
 	
 }

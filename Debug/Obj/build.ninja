@@ -21,10 +21,14 @@ rule browsedata
 
 #Build steps
 build Fsm.pbi : index Fsm.xcl
+build Keypad.pbi : index Keypad.xcl
 build main.pbi : index main.xcl
 build Port_INIT.pbi : index Port_INIT.xcl
 build Systick_Timer.pbi : index Systick_Timer.xcl
-build seven$ segments.pbd : link Fsm.pbi main.pbi Port_INIT.pbi Systick_Timer.pbi
+build seven$ segments_part0.pbi : link Fsm.pbi Keypad.pbi
+build seven$ segments_part1.pbi : link main.pbi Port_INIT.pbi
+build seven$ segments_part2.pbi : link Systick_Timer.pbi
+build seven$ segments.pbd : link seven$ segments_part0.pbi seven$ segments_part1.pbi seven$ segments_part2.pbi
 build seven$ segments.pbw : browsedata seven$ segments.pbd
 
 

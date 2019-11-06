@@ -2110,6 +2110,12 @@
         <name>$PROJ_DIR$\Fsm.h</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\Keypad.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\KeyPad.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\main.c</name>
     </file>
     <file>

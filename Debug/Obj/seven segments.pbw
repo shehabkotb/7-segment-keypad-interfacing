@@ -92710,59 +92710,339 @@
     "scope": null
   },
   {
-    "ID": "c:@F@concateSwitchInput",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "unsigned long concateSwitchInput(void)",
-    "location": {
-      "column": "15",
-      "line": "10",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Fsm.h"
-    },
-    "name": "concateSwitchInput",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@Fsm",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "Fsm",
-    "location": {
-      "column": "11",
-      "line": "6",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\main.c"
-    },
-    "name": "Fsm",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:@keymap",
     "What": "Variable",
     "defdec": "Def",
     "display": "keymap",
     "location": {
       "column": "21",
-      "line": "27",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\main.c"
+      "line": "5",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Keypad.c"
     },
     "name": "keymap",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@execute",
+    "ID": "c:@F@AnyPressed",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "void execute(unsigned int)",
+    "defdec": "Def",
+    "display": "bool AnyPressed(unsigned int)",
     "location": {
       "column": "6",
-      "line": "40",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\main.c"
+      "line": "13",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Keypad.c"
     },
-    "name": "execute",
+    "name": "AnyPressed",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@detectRow",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void detectRow(unsigned int)",
+    "location": {
+      "column": "6",
+      "line": "22",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Keypad.c"
+    },
+    "name": "detectRow",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Keypad.c@382@F@detectRow@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "10",
+      "line": "23",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Keypad.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Keypad.c@523@F@detectRow@test",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "test",
+    "location": {
+      "column": "16",
+      "line": "26",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Keypad.c"
+    },
+    "name": "test",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@detectColumn",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void detectColumn(unsigned int, int)",
+    "location": {
+      "column": "6",
+      "line": "34",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Keypad.c"
+    },
+    "name": "detectColumn",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Keypad.c@745@F@detectColumn@j",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "j",
+    "location": {
+      "column": "10",
+      "line": "35",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Keypad.c"
+    },
+    "name": "j",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@charTo7Seg",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "unsigned int charTo7Seg(unsigned char)",
+    "location": {
+      "column": "14",
+      "line": "44",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Keypad.c"
+    },
+    "name": "charTo7Seg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:stdbool.h@96@macro@_STDBOOL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_STDBOOL",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\arm\\inc\\c\\stdbool.h"
+    },
+    "name": "_STDBOOL",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdbool.h@200@macro@bool",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "bool",
+    "location": {
+      "column": "11",
+      "line": "13",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\arm\\inc\\c\\stdbool.h"
+    },
+    "name": "bool",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdbool.h@225@macro@true",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "true",
+    "location": {
+      "column": "11",
+      "line": "14",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\arm\\inc\\c\\stdbool.h"
+    },
+    "name": "true",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdbool.h@246@macro@false",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "false",
+    "location": {
+      "column": "11",
+      "line": "15",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\arm\\inc\\c\\stdbool.h"
+    },
+    "name": "false",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stdbool.h@275@macro@__bool_true_false_are_defined",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__bool_true_false_are_defined",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3\\arm\\inc\\c\\stdbool.h"
+    },
+    "name": "__bool_true_false_are_defined",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:KeyPad.h@28@macro@__KEYPAD__",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__KEYPAD__",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\KeyPad.h"
+    },
+    "name": "__KEYPAD__",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@keymap",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "keymap",
+    "location": {
+      "column": "28",
+      "line": "6",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\KeyPad.h"
+    },
+    "name": "keymap",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@keymap",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "keymap",
+    "location": {
+      "column": "28",
+      "line": "6",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\KeyPad.h"
+    },
+    "name": "keymap",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@AnyPressed",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "bool AnyPressed(unsigned int)",
+    "location": {
+      "column": "6",
+      "line": "8",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\KeyPad.h"
+    },
+    "name": "AnyPressed",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@AnyPressed",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "bool AnyPressed(unsigned int)",
+    "location": {
+      "column": "6",
+      "line": "8",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\KeyPad.h"
+    },
+    "name": "AnyPressed",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@detectRow",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void detectRow(unsigned int)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\KeyPad.h"
+    },
+    "name": "detectRow",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@detectRow",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void detectRow(unsigned int)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\KeyPad.h"
+    },
+    "name": "detectRow",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@detectColumn",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void detectColumn(unsigned int, int)",
+    "location": {
+      "column": "6",
+      "line": "10",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\KeyPad.h"
+    },
+    "name": "detectColumn",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@detectColumn",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void detectColumn(unsigned int, int)",
+    "location": {
+      "column": "6",
+      "line": "10",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\KeyPad.h"
+    },
+    "name": "detectColumn",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@charTo7Seg",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned int charTo7Seg(unsigned char)",
+    "location": {
+      "column": "14",
+      "line": "11",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\KeyPad.h"
+    },
+    "name": "charTo7Seg",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@charTo7Seg",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned int charTo7Seg(unsigned char)",
+    "location": {
+      "column": "14",
+      "line": "11",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\KeyPad.h"
+    },
+    "name": "charTo7Seg",
+    "origin": "user_include",
     "scope": null
   },
   {
@@ -92772,7 +93052,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "44",
+      "line": "6",
       "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\main.c"
     },
     "name": "main",
@@ -92780,41 +93060,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1070@F@main@input",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "input",
-    "location": {
-      "column": "16",
-      "line": "51",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\main.c"
-    },
-    "name": "input",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@1093@F@main@cState",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "cState",
-    "location": {
-      "column": "15",
-      "line": "52",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\main.c"
-    },
-    "name": "cState",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@1223@F@main@keys",
+    "ID": "c:main.c@370@F@main@keys",
     "What": "Variable",
     "defdec": "Def",
     "display": "keys",
     "location": {
       "column": "16",
-      "line": "58",
+      "line": "16",
       "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\main.c"
     },
     "name": "keys",
@@ -92822,44 +93074,114 @@
     "scope": null
   },
   {
-    "ID": "c:@F@execute",
+    "ID": "c:@F@Configure_SysTick",
     "What": "Function",
-    "defdec": "Def",
-    "display": "void execute(unsigned int)",
+    "defdec": "Dec",
+    "display": "void Configure_SysTick(void)",
     "location": {
       "column": "6",
-      "line": "66",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\main.c"
+      "line": "1",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Systick_Timer.h"
     },
-    "name": "execute",
+    "name": "Configure_SysTick",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysTick_Wait1ms",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SysTick_Wait1ms(unsigned long)",
+    "location": {
+      "column": "6",
+      "line": "2",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Systick_Timer.h"
+    },
+    "name": "SysTick_Wait1ms",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PORTB_init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void PORTB_init(void)",
+    "location": {
+      "column": "6",
+      "line": "4",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
+    },
+    "name": "PORTB_init",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@1396@F@execute@i",
+    "ID": "c:Port_INIT.c@94@F@PORTB_init@delay",
     "What": "Variable",
     "defdec": "Def",
-    "display": "i",
+    "display": "delay",
     "location": {
-      "column": "11",
-      "line": "69",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\main.c"
+      "column": "15",
+      "line": "7",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
     },
-    "name": "i",
+    "name": "delay",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@1650@F@execute@j",
+    "ID": "c:@F@PORTA_init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void PORTA_init(void)",
+    "location": {
+      "column": "6",
+      "line": "17",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
+    },
+    "name": "PORTA_init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Port_INIT.c@368@F@PORTA_init@delay",
     "What": "Variable",
     "defdec": "Def",
-    "display": "j",
+    "display": "delay",
     "location": {
-      "column": "13",
-      "line": "74",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\main.c"
+      "column": "15",
+      "line": "21",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
     },
-    "name": "j",
+    "name": "delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PORTE_init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void PORTE_init(void)",
+    "location": {
+      "column": "6",
+      "line": "33",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
+    },
+    "name": "PORTE_init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Port_INIT.c@667@F@PORTE_init@delay",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "delay",
+    "location": {
+      "column": "15",
+      "line": "37",
+      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
+    },
+    "name": "delay",
     "origin": "project_file",
     "scope": null
   },
@@ -92920,283 +93242,59 @@
     "scope": null
   },
   {
-    "ID": "c:@F@PORTF_init",
+    "ID": "c:@F@PORTA_init",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void PORTF_init(void)",
+    "display": "void PORTA_init(void)",
     "location": {
       "column": "6",
       "line": "7",
       "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.h"
     },
-    "name": "PORTF_init",
+    "name": "PORTA_init",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@PORTF_init",
+    "ID": "c:@F@PORTA_init",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void PORTF_init(void)",
+    "display": "void PORTA_init(void)",
     "location": {
       "column": "6",
       "line": "7",
       "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.h"
     },
-    "name": "PORTF_init",
+    "name": "PORTA_init",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@PORTD_init",
+    "ID": "c:@F@PORTE_init",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void PORTD_init(void)",
+    "display": "void PORTE_init(void)",
     "location": {
       "column": "6",
       "line": "8",
       "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.h"
     },
-    "name": "PORTD_init",
+    "name": "PORTE_init",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@PORTD_init",
+    "ID": "c:@F@PORTE_init",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void PORTD_init(void)",
+    "display": "void PORTE_init(void)",
     "location": {
       "column": "6",
       "line": "8",
       "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.h"
     },
-    "name": "PORTD_init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PORTA_init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void PORTA_init(void)",
-    "location": {
-      "column": "6",
-      "line": "9",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.h"
-    },
-    "name": "PORTA_init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PORTA_init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void PORTA_init(void)",
-    "location": {
-      "column": "6",
-      "line": "9",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.h"
-    },
-    "name": "PORTA_init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PORTE_init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void PORTE_init(void)",
-    "location": {
-      "column": "6",
-      "line": "10",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.h"
-    },
     "name": "PORTE_init",
     "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PORTE_init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void PORTE_init(void)",
-    "location": {
-      "column": "6",
-      "line": "10",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.h"
-    },
-    "name": "PORTE_init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Configure_SysTick",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Configure_SysTick(void)",
-    "location": {
-      "column": "6",
-      "line": "1",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Systick_Timer.h"
-    },
-    "name": "Configure_SysTick",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SysTick_Wait1ms",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SysTick_Wait1ms(unsigned long)",
-    "location": {
-      "column": "6",
-      "line": "2",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Systick_Timer.h"
-    },
-    "name": "SysTick_Wait1ms",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PORTB_init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void PORTB_init(void)",
-    "location": {
-      "column": "6",
-      "line": "4",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
-    },
-    "name": "PORTB_init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Port_INIT.c@78@F@PORTB_init@delay",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "delay",
-    "location": {
-      "column": "15",
-      "line": "6",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
-    },
-    "name": "delay",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PORTF_init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void PORTF_init(void)",
-    "location": {
-      "column": "6",
-      "line": "16",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
-    },
-    "name": "PORTF_init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Port_INIT.c@308@F@PORTF_init@delay",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "delay",
-    "location": {
-      "column": "15",
-      "line": "18",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
-    },
-    "name": "delay",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PORTA_init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void PORTA_init(void)",
-    "location": {
-      "column": "6",
-      "line": "29",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
-    },
-    "name": "PORTA_init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Port_INIT.c@714@F@PORTA_init@delay",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "delay",
-    "location": {
-      "column": "15",
-      "line": "37",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
-    },
-    "name": "delay",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PORTD_init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void PORTD_init(void)",
-    "location": {
-      "column": "6",
-      "line": "48",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
-    },
-    "name": "PORTD_init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Port_INIT.c@1084@F@PORTD_init@delay",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "delay",
-    "location": {
-      "column": "15",
-      "line": "56",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
-    },
-    "name": "delay",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PORTE_init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void PORTE_init(void)",
-    "location": {
-      "column": "6",
-      "line": "67",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
-    },
-    "name": "PORTE_init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Port_INIT.c@1477@F@PORTE_init@delay",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "delay",
-    "location": {
-      "column": "15",
-      "line": "75",
-      "path": "C:\\Users\\lilwiz\\Documents\\embedded projects\\assignment 1 seven segments\\Port_INIT.c"
-    },
-    "name": "delay",
-    "origin": "project_file",
     "scope": null
   },
   {
