@@ -34,7 +34,7 @@ void detectRow(unsigned int keys) {
 void detectColumn(unsigned int keys, int row) {
 	for(int j = 0;j < 4;j++) {				   // loop on columns
 		keys = GPIO_PORTA_DATA_R & (1U << (2 + j)); //(2 + j) cause we start from PA2
-		if(!keys) {
+		if(!keys) {									// if key is this column
 			GPIO_PORTB_DATA_R = ~charTo7Seg(keymap[row][j]);
 			return;
 		}
